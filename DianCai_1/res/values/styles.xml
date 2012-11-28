@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@drawable/dlsz1</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	<style name="listBtnStyle">
+	    <item name="android:background">@drawable/listbtnselect</item>
+	</style>
+</resources>
