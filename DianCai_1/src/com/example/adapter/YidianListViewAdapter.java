@@ -37,7 +37,7 @@ public class YidianListViewAdapter extends BaseAdapter{
 	//数据库文件
 	public final static String DB_FILE_NAME = "tabkaway.db";
 	// 归属地
-	public final static String TABLE_NAME = "dish_info";
+	//public final static String TABLE_NAME = "dish_info";
 	SQLiteDatabase db = null;
 	private Integer[] mImageIds = {
 			R.drawable.images_1,		   
