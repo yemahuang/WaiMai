@@ -29,7 +29,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.DBHelper.SQLiteDbHelper;
-import com.example.adapter.MyListViewAdapter;
 import com.example.adapter.YidianListViewAdapter;
 
 /**

@@ -24,16 +24,17 @@ public class MainActivity extends TabActivity implements
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.maintabs);
-        this.Recommend = new Intent(this, StartActivity.class);
-        this.Search = new Intent(this, ActionActivity.class);
+        this.Recommend = new Intent(this,StartActivity .class);
+        this.Search = new Intent(this,ActionActivity .class);
         this.Category = new Intent(this, MessageGroup.class);
         this.Management = new Intent(this, YidianActivity.class);
-        this.Ranking = new Intent(this, Transition3d.class);
+        this.Ranking = new Intent(this, YidianActivity.class);
         
         initRadios();
         
         setupIntent();
     }
+    
     private void initRadios() {
          ((RadioButton) findViewById(R.id.radio_button0)).setOnCheckedChangeListener(this);
          ((RadioButton) findViewById(R.id.radio_button1)).setOnCheckedChangeListener(this);
@@ -64,39 +65,7 @@ public class MainActivity extends TabActivity implements
     }
 
     
-    @Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		// TODO Auto-generated method stub
-
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-		   exitApp();
-			return true;
-		}
-
-		return super.onKeyDown(keyCode, event);
-	}
-    private void exitApp(){
-
-		AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-		builder.setIcon(R.drawable.question_dialog_icon);
-		builder.setTitle("确定！");
-		builder.setMessage("退出程序");
-		builder.setPositiveButton("确定",
-				new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int whichButton) {
-				MainActivity.this.finish();
-			}
-		});
-		builder.setNegativeButton("返回", new DialogInterface.OnClickListener() {
-
-			public void onClick(DialogInterface dialog, int which) {
-			}
-
-		});
-		builder.create().show();
-	}
-    
-    
+  
    
     private void setupIntent() {
         this.mHost = getTabHost();

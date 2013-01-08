@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="#F0F8FF" >
-        <ListView
-        android:cacheColorHint="#F0F8FF"
-        android:id="@+id/listView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
 
-</LinearLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#F0F8FF" > 
+ 
+
+    <ListView
+        android:id="@+id/listview_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+        android:persistentDrawingCache="animation|scrolling" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DCDCDC"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>                                          
+            </LinearLayout>
+
+  
+            <TextView
+                android:id="@+id/detailInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+           		android:textSize="17dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 public class gifActivity extends Activity {
-	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -17,9 +16,7 @@ public class gifActivity extends Activity {
 		Button btn = (Button) findViewById(R.id.Button01);
 		Button btn2 = (Button) findViewById(R.id.Button02);
 		final TypegifView view = (TypegifView) findViewById(R.id.gifView1);
-
 		btn.setOnClickListener(new OnClickListener() {
-
 			public void onClick(View v) {
 				view.setStop();
 			}

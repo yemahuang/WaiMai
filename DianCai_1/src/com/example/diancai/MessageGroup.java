@@ -102,9 +102,9 @@ public class MessageGroup extends Activity {
 		view1 =mInflater.inflate(R.layout.lay1, null);
 		view2 =mInflater.inflate(R.layout.lay2, null);
 		view3 =mInflater.inflate(R.layout.lay3, null);
-		myList1=(ListView) view1.findViewById(R.id.listView1);
-		myList2=(ListView) view2.findViewById(R.id.listView2);
-		myList3=(ListView) view3.findViewById(R.id.listView3);		
+		myList1=(ListView) view1.findViewById(R.id.listview_1);
+		myList2=(ListView) view2.findViewById(R.id.listview_1);
+		myList3=(ListView) view3.findViewById(R.id.listview_1);		
 		MyAdapter adapter = new MyAdapter(this);
 		myList1.setAdapter(adapter);
 		myList2.setAdapter(adapter);

@@ -14,55 +14,6 @@ public final class R {
         public static final int slide_right=0x7f040002;
     }
     public static final class attr {
-        /**  @hide Whether the number picker supports fligning. 
-         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int flingable=0x7f010005;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int numberPickerDownButtonStyle=0x7f010002;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int numberPickerInputTextStyle=0x7f010003;
-        /**  Don't touch this 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int numberPickerStyle=0x7f010000;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int numberPickerUpButtonStyle=0x7f010001;
-        /**  @hide The divider for making the selection area. 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int selectionDivider=0x7f010006;
-        /**  @hide The height of the selection divider. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int selectionDividerHeight=0x7f010007;
-        /**  @hide Color for the solid color background if such for optimized rendering. 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int solidColor=0x7f010004;
     }
     public static final class dimen {
         public static final int padding_large=0x7f060002;
@@ -70,18 +21,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int padding_small=0x7f060000;
     }
     public static final class drawable {
-        public static final int binding_button_normal=0x7f020000;
-        public static final int binding_button_pressed=0x7f020001;
-        public static final int btn_install=0x7f020002;
-        public static final int btn_install_disable=0x7f020003;
-        public static final int btn_install_focus=0x7f020004;
-        public static final int btn_lead_normal=0x7f020005;
-        public static final int btn_lead_press=0x7f020006;
-        public static final int btn_small_normal=0x7f020007;
-        public static final int btn_small_pressed=0x7f020008;
-        public static final int cartoon_parchment_paper=0x7f020009;
-        public static final int chevron_default=0x7f02000a;
-        public static final int dlsz1=0x7f02000b;
+        public static final int bg=0x7f020000;
+        public static final int bg_1=0x7f020001;
+        public static final int binding_button_normal=0x7f020002;
+        public static final int binding_button_pressed=0x7f020003;
+        public static final int btn_install=0x7f020004;
+        public static final int btn_install_disable=0x7f020005;
+        public static final int btn_install_focus=0x7f020006;
+        public static final int btn_lead_normal=0x7f020007;
+        public static final int btn_lead_press=0x7f020008;
+        public static final int btn_small_pressed=0x7f020009;
+        public static final int dyw_size=0x7f02000a;
+        public static final int dyw_size_1=0x7f02000b;
         public static final int guide=0x7f02000c;
         public static final int ic_tab_category=0x7f02000d;
         public static final int ic_tab_category_pressed=0x7f02000e;
@@ -103,407 +54,224 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int icon_send_pressed=0x7f02001e;
         public static final int icon_share_normal=0x7f02001f;
         public static final int icon_share_pressed=0x7f020020;
-        public static final int images_1=0x7f020021;
-        public static final int images_10=0x7f020022;
-        public static final int images_11=0x7f020023;
-        public static final int images_12=0x7f020024;
-        public static final int images_13=0x7f020025;
-        public static final int images_14=0x7f020026;
-        public static final int images_15=0x7f020027;
-        public static final int images_16=0x7f020028;
-        public static final int images_17=0x7f020029;
-        public static final int images_18=0x7f02002a;
-        public static final int images_19=0x7f02002b;
-        public static final int images_2=0x7f02002c;
-        public static final int images_20=0x7f02002d;
-        public static final int images_21=0x7f02002e;
-        public static final int images_22=0x7f02002f;
-        public static final int images_23=0x7f020030;
-        public static final int images_24=0x7f020031;
-        public static final int images_25=0x7f020032;
-        public static final int images_26=0x7f020033;
-        public static final int images_27=0x7f020034;
-        public static final int images_28=0x7f020035;
-        public static final int images_29=0x7f020036;
-        public static final int images_3=0x7f020037;
-        public static final int images_30=0x7f020038;
-        public static final int images_31=0x7f020039;
-        public static final int images_32=0x7f02003a;
-        public static final int images_33=0x7f02003b;
-        public static final int images_34=0x7f02003c;
-        public static final int images_35=0x7f02003d;
-        public static final int images_37=0x7f02003e;
-        public static final int images_38=0x7f02003f;
-        public static final int images_39=0x7f020040;
-        public static final int images_4=0x7f020041;
-        public static final int images_40=0x7f020042;
-        public static final int images_41=0x7f020043;
-        public static final int images_42=0x7f020044;
-        public static final int images_43=0x7f020045;
-        public static final int images_44=0x7f020046;
-        public static final int images_45=0x7f020047;
-        public static final int images_46=0x7f020048;
-        public static final int images_47=0x7f020049;
-        public static final int images_48=0x7f02004a;
-        public static final int images_49=0x7f02004b;
-        public static final int images_5=0x7f02004c;
-        public static final int images_50=0x7f02004d;
-        public static final int images_51=0x7f02004e;
-        public static final int images_52=0x7f02004f;
-        public static final int images_53=0x7f020050;
-        public static final int images_54=0x7f020051;
-        public static final int images_55=0x7f020052;
-        public static final int images_56=0x7f020053;
-        public static final int images_57=0x7f020054;
-        public static final int images_58=0x7f020055;
-        public static final int images_59=0x7f020056;
-        public static final int images_6=0x7f020057;
-        public static final int images_60=0x7f020058;
-        public static final int images_62=0x7f020059;
-        public static final int images_63=0x7f02005a;
-        public static final int images_64=0x7f02005b;
-        public static final int images_65=0x7f02005c;
-        public static final int images_66=0x7f02005d;
-        public static final int images_67=0x7f02005e;
-        public static final int images_68=0x7f02005f;
-        public static final int images_69=0x7f020060;
-        public static final int images_7=0x7f020061;
-        public static final int images_70=0x7f020062;
-        public static final int images_71=0x7f020063;
-        public static final int images_72=0x7f020064;
-        public static final int images_73=0x7f020065;
-        public static final int images_74=0x7f020066;
-        public static final int images_75=0x7f020067;
-        public static final int images_76=0x7f020068;
-        public static final int images_77=0x7f020069;
-        public static final int images_8=0x7f02006a;
-        public static final int images_9=0x7f02006b;
-        public static final int list_download_button_normal=0x7f02006c;
-        public static final int list_download_button_pressed=0x7f02006d;
-        public static final int list_header_bar=0x7f02006e;
-        public static final int listbtnselect=0x7f02006f;
-        public static final int listbtnselect_1=0x7f020070;
-        public static final int maximage_1=0x7f020071;
-        public static final int maximage_2=0x7f020072;
-        public static final int maximage_3=0x7f020073;
-        public static final int maximage_4=0x7f020074;
-        public static final int maximage_5=0x7f020075;
-        public static final int maximages_1=0x7f020076;
-        public static final int maximages_10=0x7f020077;
-        public static final int maximages_11=0x7f020078;
-        public static final int maximages_12=0x7f020079;
-        public static final int maximages_13=0x7f02007a;
-        public static final int maximages_14=0x7f02007b;
-        public static final int maximages_15=0x7f02007c;
-        public static final int maximages_16=0x7f02007d;
-        public static final int maximages_17=0x7f02007e;
-        public static final int maximages_18=0x7f02007f;
-        public static final int maximages_19=0x7f020080;
-        public static final int maximages_2=0x7f020081;
-        public static final int maximages_20=0x7f020082;
-        public static final int maximages_21=0x7f020083;
-        public static final int maximages_22=0x7f020084;
-        public static final int maximages_23=0x7f020085;
-        public static final int maximages_24=0x7f020086;
-        public static final int maximages_3=0x7f020087;
-        public static final int maximages_4=0x7f020088;
-        public static final int maximages_5=0x7f020089;
-        public static final int maximages_6=0x7f02008a;
-        public static final int maximages_7=0x7f02008b;
-        public static final int maximages_8=0x7f02008c;
-        public static final int maximages_9=0x7f02008d;
-        public static final int np_numberpicker_down_btn_holo_dark=0x7f02008e;
-        public static final int np_numberpicker_down_btn_holo_light=0x7f02008f;
-        public static final int np_numberpicker_down_disabled_focused_holo_dark=0x7f020090;
-        public static final int np_numberpicker_down_disabled_focused_holo_light=0x7f020091;
-        public static final int np_numberpicker_down_disabled_holo_dark=0x7f020092;
-        public static final int np_numberpicker_down_disabled_holo_light=0x7f020093;
-        public static final int np_numberpicker_down_focused_holo_dark=0x7f020094;
-        public static final int np_numberpicker_down_focused_holo_light=0x7f020095;
-        public static final int np_numberpicker_down_longpressed_holo_dark=0x7f020096;
-        public static final int np_numberpicker_down_longpressed_holo_light=0x7f020097;
-        public static final int np_numberpicker_down_normal_holo_dark=0x7f020098;
-        public static final int np_numberpicker_down_normal_holo_light=0x7f020099;
-        public static final int np_numberpicker_down_pressed_holo_dark=0x7f02009a;
-        public static final int np_numberpicker_down_pressed_holo_light=0x7f02009b;
-        public static final int np_numberpicker_selection_divider=0x7f02009c;
-        public static final int np_numberpicker_up_btn_holo_dark=0x7f02009d;
-        public static final int np_numberpicker_up_btn_holo_light=0x7f02009e;
-        public static final int np_numberpicker_up_disabled_focused_holo_dark=0x7f02009f;
-        public static final int np_numberpicker_up_disabled_focused_holo_light=0x7f0200a0;
-        public static final int np_numberpicker_up_disabled_holo_dark=0x7f0200a1;
-        public static final int np_numberpicker_up_disabled_holo_light=0x7f0200a2;
-        public static final int np_numberpicker_up_focused_holo_dark=0x7f0200a3;
-        public static final int np_numberpicker_up_focused_holo_light=0x7f0200a4;
-        public static final int np_numberpicker_up_longpressed_holo_dark=0x7f0200a5;
-        public static final int np_numberpicker_up_longpressed_holo_light=0x7f0200a6;
-        public static final int np_numberpicker_up_normal_holo_dark=0x7f0200a7;
-        public static final int np_numberpicker_up_normal_holo_light=0x7f0200a8;
-        public static final int np_numberpicker_up_pressed_holo_dark=0x7f0200a9;
-        public static final int np_numberpicker_up_pressed_holo_light=0x7f0200aa;
-        public static final int question_dialog_icon=0x7f0200ab;
-        public static final int r_bg=0x7f0200ac;
-        public static final int select_r1=0x7f0200ad;
-        public static final int select_r2=0x7f0200ae;
-        public static final int select_r3=0x7f0200af;
-        public static final int select_r4=0x7f0200b0;
-        public static final int select_r5=0x7f0200b1;
-        public static final int tab_bottom_focus=0x7f0200b2;
-        public static final int tab_cursor2=0x7f0200b3;
-        public static final int tab_selected_rounded=0x7f0200b4;
-        public static final int toolbar_bkg=0x7f0200b5;
-        public static final int waimai_icon=0x7f0200b6;
+        public static final int imagem_1=0x7f020021;
+        public static final int imagem_10=0x7f020022;
+        public static final int imagem_11=0x7f020023;
+        public static final int imagem_12=0x7f020024;
+        public static final int imagem_13=0x7f020025;
+        public static final int imagem_14=0x7f020026;
+        public static final int imagem_15=0x7f020027;
+        public static final int imagem_16=0x7f020028;
+        public static final int imagem_17=0x7f020029;
+        public static final int imagem_18=0x7f02002a;
+        public static final int imagem_19=0x7f02002b;
+        public static final int imagem_2=0x7f02002c;
+        public static final int imagem_20=0x7f02002d;
+        public static final int imagem_21=0x7f02002e;
+        public static final int imagem_22=0x7f02002f;
+        public static final int imagem_23=0x7f020030;
+        public static final int imagem_24=0x7f020031;
+        public static final int imagem_3=0x7f020032;
+        public static final int imagem_4=0x7f020033;
+        public static final int imagem_5=0x7f020034;
+        public static final int imagem_6=0x7f020035;
+        public static final int imagem_7=0x7f020036;
+        public static final int imagem_8=0x7f020037;
+        public static final int imagem_9=0x7f020038;
+        public static final int images_1=0x7f020039;
+        public static final int images_10=0x7f02003a;
+        public static final int images_11=0x7f02003b;
+        public static final int images_12=0x7f02003c;
+        public static final int images_13=0x7f02003d;
+        public static final int images_14=0x7f02003e;
+        public static final int images_15=0x7f02003f;
+        public static final int images_16=0x7f020040;
+        public static final int images_17=0x7f020041;
+        public static final int images_18=0x7f020042;
+        public static final int images_19=0x7f020043;
+        public static final int images_2=0x7f020044;
+        public static final int images_20=0x7f020045;
+        public static final int images_21=0x7f020046;
+        public static final int images_22=0x7f020047;
+        public static final int images_23=0x7f020048;
+        public static final int images_24=0x7f020049;
+        public static final int images_25=0x7f02004a;
+        public static final int images_26=0x7f02004b;
+        public static final int images_27=0x7f02004c;
+        public static final int images_28=0x7f02004d;
+        public static final int images_29=0x7f02004e;
+        public static final int images_3=0x7f02004f;
+        public static final int images_30=0x7f020050;
+        public static final int images_31=0x7f020051;
+        public static final int images_32=0x7f020052;
+        public static final int images_33=0x7f020053;
+        public static final int images_34=0x7f020054;
+        public static final int images_35=0x7f020055;
+        public static final int images_37=0x7f020056;
+        public static final int images_38=0x7f020057;
+        public static final int images_39=0x7f020058;
+        public static final int images_4=0x7f020059;
+        public static final int images_40=0x7f02005a;
+        public static final int images_41=0x7f02005b;
+        public static final int images_42=0x7f02005c;
+        public static final int images_43=0x7f02005d;
+        public static final int images_44=0x7f02005e;
+        public static final int images_45=0x7f02005f;
+        public static final int images_46=0x7f020060;
+        public static final int images_47=0x7f020061;
+        public static final int images_48=0x7f020062;
+        public static final int images_49=0x7f020063;
+        public static final int images_5=0x7f020064;
+        public static final int images_50=0x7f020065;
+        public static final int images_51=0x7f020066;
+        public static final int images_52=0x7f020067;
+        public static final int images_53=0x7f020068;
+        public static final int images_54=0x7f020069;
+        public static final int images_55=0x7f02006a;
+        public static final int images_56=0x7f02006b;
+        public static final int images_57=0x7f02006c;
+        public static final int images_58=0x7f02006d;
+        public static final int images_59=0x7f02006e;
+        public static final int images_6=0x7f02006f;
+        public static final int images_60=0x7f020070;
+        public static final int images_62=0x7f020071;
+        public static final int images_63=0x7f020072;
+        public static final int images_64=0x7f020073;
+        public static final int images_65=0x7f020074;
+        public static final int images_66=0x7f020075;
+        public static final int images_67=0x7f020076;
+        public static final int images_68=0x7f020077;
+        public static final int images_69=0x7f020078;
+        public static final int images_7=0x7f020079;
+        public static final int images_70=0x7f02007a;
+        public static final int images_71=0x7f02007b;
+        public static final int images_72=0x7f02007c;
+        public static final int images_73=0x7f02007d;
+        public static final int images_74=0x7f02007e;
+        public static final int images_75=0x7f02007f;
+        public static final int images_76=0x7f020080;
+        public static final int images_77=0x7f020081;
+        public static final int images_8=0x7f020082;
+        public static final int images_9=0x7f020083;
+        public static final int list_download_button_normal=0x7f020084;
+        public static final int list_download_button_pressed=0x7f020085;
+        public static final int list_header_bar=0x7f020086;
+        public static final int listbtnselect_1=0x7f020087;
+        public static final int maximage_1=0x7f020088;
+        public static final int maximage_2=0x7f020089;
+        public static final int maximage_3=0x7f02008a;
+        public static final int maximage_4=0x7f02008b;
+        public static final int maximage_5=0x7f02008c;
+        public static final int maximages_1=0x7f02008d;
+        public static final int maximages_10=0x7f02008e;
+        public static final int maximages_11=0x7f02008f;
+        public static final int maximages_12=0x7f020090;
+        public static final int maximages_13=0x7f020091;
+        public static final int maximages_14=0x7f020092;
+        public static final int maximages_15=0x7f020093;
+        public static final int maximages_16=0x7f020094;
+        public static final int maximages_17=0x7f020095;
+        public static final int maximages_18=0x7f020096;
+        public static final int maximages_19=0x7f020097;
+        public static final int maximages_2=0x7f020098;
+        public static final int maximages_20=0x7f020099;
+        public static final int maximages_21=0x7f02009a;
+        public static final int maximages_22=0x7f02009b;
+        public static final int maximages_23=0x7f02009c;
+        public static final int maximages_24=0x7f02009d;
+        public static final int maximages_3=0x7f02009e;
+        public static final int maximages_4=0x7f02009f;
+        public static final int maximages_5=0x7f0200a0;
+        public static final int maximages_6=0x7f0200a1;
+        public static final int maximages_7=0x7f0200a2;
+        public static final int maximages_8=0x7f0200a3;
+        public static final int maximages_9=0x7f0200a4;
+        public static final int question_dialog_icon=0x7f0200a5;
+        public static final int r_bg=0x7f0200a6;
+        public static final int select_r1=0x7f0200a7;
+        public static final int select_r2=0x7f0200a8;
+        public static final int select_r3=0x7f0200a9;
+        public static final int select_r4=0x7f0200aa;
+        public static final int select_r5=0x7f0200ab;
+        public static final int seperator=0x7f0200ac;
+        public static final int tab_bottom_focus=0x7f0200ad;
+        public static final int tab_cursor2=0x7f0200ae;
+        public static final int tab_selected_rounded=0x7f0200af;
+        public static final int toolbar_bkg=0x7f0200b0;
+        public static final int waimai_icon=0x7f0200b1;
     }
     public static final class id {
-        public static final int LinearLayout=0x7f07000d;
-        public static final int add=0x7f070023;
+        public static final int LinearLayout=0x7f07000c;
+        public static final int add=0x7f070021;
         public static final int animation_layout_content=0x7f070001;
         public static final int animation_layout_sidebar=0x7f070000;
         public static final int back_btn=0x7f070002;
-        public static final int button1=0x7f07000f;
-        public static final int container=0x7f07000a;
-        public static final int cursor=0x7f070008;
-        public static final int detailInfo=0x7f070010;
-        public static final int img=0x7f070022;
-        public static final int item=0x7f070011;
-        public static final int linearLayout1=0x7f070004;
-        public static final int listView1=0x7f070012;
-        public static final int listView2=0x7f070013;
-        public static final int listView3=0x7f070014;
-        public static final int listview_1=0x7f07000b;
-        public static final int main_radio=0x7f070019;
-        public static final int menu_settings=0x7f070027;
-        public static final int np_decrement=0x7f070021;
-        public static final int np_increment=0x7f07001f;
-        public static final int np_numberpicker_input=0x7f070020;
-        public static final int numberPicker=0x7f070003;
-        public static final int picture=0x7f07000e;
-        public static final int price=0x7f070024;
-        public static final int radio_button0=0x7f07001a;
-        public static final int radio_button1=0x7f07001b;
-        public static final int radio_button2=0x7f07001c;
-        public static final int radio_button3=0x7f07001d;
-        public static final int radio_button4=0x7f07001e;
-        public static final int scrollView=0x7f07000c;
-        public static final int text1=0x7f070005;
-        public static final int text2=0x7f070006;
-        public static final int text3=0x7f070007;
-        public static final int textView1=0x7f070015;
-        public static final int textView2=0x7f070016;
-        public static final int textView3=0x7f070017;
-        public static final int textView4=0x7f070018;
-        public static final int time=0x7f070025;
-        public static final int vPager=0x7f070009;
-        public static final int yidianlist=0x7f070026;
-    }
-    public static final class integer {
-        public static final int np_config_longAnimTime=0x7f080000;
+        public static final int button1=0x7f070018;
+        public static final int container=0x7f070009;
+        public static final int cursor=0x7f070007;
+        public static final int detailInfo=0x7f07000e;
+        public static final int hideimageview=0x7f07001e;
+        public static final int hidetext=0x7f07001f;
+        public static final int hidlayout=0x7f07001d;
+        public static final int img=0x7f070015;
+        public static final int linearLayout1=0x7f070003;
+        public static final int listview_1=0x7f07000a;
+        public static final int main_radio=0x7f07000f;
+        public static final int menu_settings=0x7f070022;
+        public static final int picture=0x7f07000d;
+        public static final int price=0x7f070019;
+        public static final int radio_button0=0x7f070010;
+        public static final int radio_button1=0x7f070011;
+        public static final int radio_button2=0x7f070012;
+        public static final int radio_button3=0x7f070013;
+        public static final int radio_button4=0x7f070014;
+        public static final int scrollView=0x7f07000b;
+        public static final int text1=0x7f070004;
+        public static final int text2=0x7f070005;
+        public static final int text3=0x7f070006;
+        public static final int textView1=0x7f070016;
+        public static final int textView2=0x7f070017;
+        public static final int textView3=0x7f07001c;
+        public static final int textView4=0x7f07001b;
+        public static final int time=0x7f07001a;
+        public static final int vPager=0x7f070008;
+        public static final int yidianlist=0x7f070020;
     }
     public static final class layout {
-        public static final int activity_light=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int animations_main_screen=0x7f030002;
-        public static final int item=0x7f030003;
-        public static final int lay1=0x7f030004;
-        public static final int lay2=0x7f030005;
-        public static final int lay3=0x7f030006;
-        public static final int listitem=0x7f030007;
-        public static final int main=0x7f030008;
-        public static final int main_2=0x7f030009;
-        public static final int maintabs=0x7f03000a;
-        public static final int new1=0x7f03000b;
-        public static final int number_picker=0x7f03000c;
-        public static final int vlist=0x7f03000d;
-        public static final int yidiancai=0x7f03000e;
-        public static final int yidianlist=0x7f03000f;
+        public static final int activity_main=0x7f030000;
+        public static final int lay1=0x7f030001;
+        public static final int lay2=0x7f030002;
+        public static final int lay3=0x7f030003;
+        public static final int main=0x7f030004;
+        public static final int maintabs=0x7f030005;
+        public static final int vlist=0x7f030006;
+        public static final int vlist_1=0x7f030007;
+        public static final int yidiancai=0x7f030008;
+        public static final int yidianlist=0x7f030009;
     }
     public static final class menu {
-        public static final int activity_main=0x7f0b0000;
+        public static final int activity_main=0x7f0a0000;
     }
     public static final class raw {
         public static final int tabkaway=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f090004;
-        public static final int hello_world=0x7f090005;
-        public static final int laobantuijian=0x7f090008;
-        public static final int listbtn=0x7f090007;
-        public static final int menu_settings=0x7f090006;
-        public static final int np_number_picker_decrement_button=0x7f090003;
-        public static final int np_number_picker_increment_button=0x7f090002;
-        public static final int np_number_picker_increment_scroll_action=0x7f090001;
-        public static final int np_number_picker_increment_scroll_mode=0x7f090000;
-        public static final int price=0x7f09000b;
-        public static final int tesetuijian=0x7f090009;
-        public static final int time=0x7f09000c;
-        public static final int zuixincaise=0x7f09000a;
+        public static final int app_name=0x7f080000;
+        public static final int hello_world=0x7f080001;
+        public static final int laobantuijian=0x7f080004;
+        public static final int listbtn=0x7f080003;
+        public static final int lucai=0x7f08000b;
+        public static final int menu_settings=0x7f080002;
+        public static final int mincai=0x7f080009;
+        public static final int price=0x7f080007;
+        public static final int tesetuijian=0x7f080005;
+        public static final int time=0x7f080008;
+        public static final int yuecai=0x7f08000a;
+        public static final int zuixincaise=0x7f080006;
     }
     public static final class style {
-        public static final int AppTheme=0x7f0a0011;
-        /**  Copy these attributes to your own theme (choose either dark or light). DO NOT EXTEND THESE 
-         */
-        public static final int NPSampleTheme=0x7f0a0000;
-        public static final int NPSampleTheme_Light=0x7f0a0001;
-        public static final int NPWidget=0x7f0a0002;
-        public static final int NPWidget_EditText=0x7f0a000b;
-        public static final int NPWidget_Holo_EditText=0x7f0a000a;
-        public static final int NPWidget_Holo_EditText_NumberPickerInputText=0x7f0a0009;
-        /** item name="android:background">@android:drawable/btn_default_holo_dark</item
-         */
-        public static final int NPWidget_Holo_ImageButton=0x7f0a000e;
-        public static final int NPWidget_Holo_ImageButton_NumberPickerDownButton=0x7f0a000d;
-        public static final int NPWidget_Holo_ImageButton_NumberPickerUpButton=0x7f0a000c;
-        public static final int NPWidget_Holo_Light_EditText_NumberPickerInputText=0x7f0a0006;
-        public static final int NPWidget_Holo_Light_ImageButton_NumberPickerDownButton=0x7f0a0008;
-        public static final int NPWidget_Holo_Light_ImageButton_NumberPickerUpButton=0x7f0a0007;
-        public static final int NPWidget_Holo_Light_NumberPicker=0x7f0a0005;
-        public static final int NPWidget_Holo_NumberPicker=0x7f0a0004;
-        public static final int NPWidget_ImageButton=0x7f0a000f;
-        public static final int NPWidget_NumberPicker=0x7f0a0003;
-        public static final int SampleTheme=0x7f0a0013;
-        public static final int SampleTheme_Light=0x7f0a0014;
-        public static final int listBtnStyle=0x7f0a0012;
-        public static final int main_tab_bottom=0x7f0a0010;
+        public static final int AppTheme=0x7f090001;
+        public static final int listBtnStyle=0x7f090002;
+        public static final int main_tab_bottom=0x7f090000;
     }
-    public static final class styleable {
-        /** Attributes that can be used with a NumberPicker.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #NumberPicker_android_fadingEdgeLength com.example.diancai:android_fadingEdgeLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberPicker_android_maxHeight com.example.diancai:android_maxHeight}</code></td><td> @hide The max height of the NumberPicker.</td></tr>
-           <tr><td><code>{@link #NumberPicker_android_maxWidth com.example.diancai:android_maxWidth}</code></td><td> @hide The max width of the NumberPicker.</td></tr>
-           <tr><td><code>{@link #NumberPicker_android_minHeight com.example.diancai:android_minHeight}</code></td><td> @hide The min height of the NumberPicker.</td></tr>
-           <tr><td><code>{@link #NumberPicker_android_minWidth com.example.diancai:android_minWidth}</code></td><td> @hide The min width of the NumberPicker.</td></tr>
-           <tr><td><code>{@link #NumberPicker_android_orientation com.example.diancai:android_orientation}</code></td><td> We need some extra attributes </td></tr>
-           <tr><td><code>{@link #NumberPicker_flingable com.example.diancai:flingable}</code></td><td> @hide Whether the number picker supports fligning.</td></tr>
-           <tr><td><code>{@link #NumberPicker_selectionDivider com.example.diancai:selectionDivider}</code></td><td> @hide The divider for making the selection area.</td></tr>
-           <tr><td><code>{@link #NumberPicker_selectionDividerHeight com.example.diancai:selectionDividerHeight}</code></td><td> @hide The height of the selection divider.</td></tr>
-           <tr><td><code>{@link #NumberPicker_solidColor com.example.diancai:solidColor}</code></td><td> @hide Color for the solid color background if such for optimized rendering.</td></tr>
-           </table>
-           @see #NumberPicker_android_fadingEdgeLength
-           @see #NumberPicker_android_maxHeight
-           @see #NumberPicker_android_maxWidth
-           @see #NumberPicker_android_minHeight
-           @see #NumberPicker_android_minWidth
-           @see #NumberPicker_android_orientation
-           @see #NumberPicker_flingable
-           @see #NumberPicker_selectionDivider
-           @see #NumberPicker_selectionDividerHeight
-           @see #NumberPicker_solidColor
-         */
-        public static final int[] NumberPicker = {
-            0x010100c4, 0x010100e0, 0x0101011f, 0x01010120,
-            0x0101013f, 0x01010140, 0x7f010004, 0x7f010005,
-            0x7f010006, 0x7f010007
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.example.diancai.R.attr#android_fadingEdgeLength}
-          attribute's value can be found in the {@link #NumberPicker} array.
-          @attr name android:android_fadingEdgeLength
-        */
-        public static final int NumberPicker_android_fadingEdgeLength = 1;
-        /**
-          <p>
-          @attr description
-           @hide The max height of the NumberPicker. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.example.diancai.R.attr#android_maxHeight}.
-          @attr name android:android_maxHeight
-        */
-        public static final int NumberPicker_android_maxHeight = 3;
-        /**
-          <p>
-          @attr description
-           @hide The max width of the NumberPicker. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.example.diancai.R.attr#android_maxWidth}.
-          @attr name android:android_maxWidth
-        */
-        public static final int NumberPicker_android_maxWidth = 2;
-        /**
-          <p>
-          @attr description
-           @hide The min height of the NumberPicker. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.example.diancai.R.attr#android_minHeight}.
-          @attr name android:android_minHeight
-        */
-        public static final int NumberPicker_android_minHeight = 5;
-        /**
-          <p>
-          @attr description
-           @hide The min width of the NumberPicker. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.example.diancai.R.attr#android_minWidth}.
-          @attr name android:android_minWidth
-        */
-        public static final int NumberPicker_android_minWidth = 4;
-        /**
-          <p>
-          @attr description
-           We need some extra attributes 
-          <p>This corresponds to the global attribute          resource symbol {@link com.example.diancai.R.attr#android_orientation}.
-          @attr name android:android_orientation
-        */
-        public static final int NumberPicker_android_orientation = 0;
-        /**
-          <p>
-          @attr description
-           @hide Whether the number picker supports fligning. 
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          <p>This is a private symbol.
-          @attr name android:flingable
-        */
-        public static final int NumberPicker_flingable = 7;
-        /**
-          <p>
-          @attr description
-           @hide The divider for making the selection area. 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name android:selectionDivider
-        */
-        public static final int NumberPicker_selectionDivider = 8;
-        /**
-          <p>
-          @attr description
-           @hide The height of the selection divider. 
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          <p>This is a private symbol.
-          @attr name android:selectionDividerHeight
-        */
-        public static final int NumberPicker_selectionDividerHeight = 9;
-        /**
-          <p>
-          @attr description
-           @hide Color for the solid color background if such for optimized rendering. 
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
-          @attr name android:solidColor
-        */
-        public static final int NumberPicker_solidColor = 6;
-    };
 }

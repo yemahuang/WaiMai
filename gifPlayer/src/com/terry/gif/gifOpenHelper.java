@@ -2,7 +2,6 @@ package com.terry.gif;
 
 import java.io.InputStream;
 import java.util.Vector;
-
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 
@@ -33,7 +32,7 @@ public class gifOpenHelper {
 
 	protected int width; // full image width
 	protected int height; // full image height
-	protected boolean gctFlag; // global color table used
+	protected boolean gctFlag;
 	protected int gctSize; // size of global color table
 	protected int loopCount = 1; // iterations; 0 = repeat forever
 

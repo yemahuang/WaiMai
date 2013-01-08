@@ -13,10 +13,10 @@
     </style>
 
     <style name="AppTheme" parent="android:Theme.Light">
-        <item name="android:windowBackground">@drawable/dlsz1</item>
+        <item name="android:windowBackground">@drawable/bg_1</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 	<style name="listBtnStyle">
-	    <item name="android:background">@drawable/listbtnselect</item>
+	    <item name="android:background">@drawable/listbtnselect_1</item>
 	</style>
 </resources>

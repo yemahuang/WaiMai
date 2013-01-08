@@ -17,7 +17,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="热菜"
+            android:text="@string/mincai"
             android:textColor="#DCDCDC"
             android:textSize="15.0dip" />
 
@@ -27,7 +27,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="凉菜"
+            android:text="@string/yuecai"
             android:textColor="#DCDCDC"
             android:textSize="15.0dip" />
 
@@ -37,7 +37,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
             android:gravity="center"
-            android:text="饮料"
+            android:text="@string/lucai"
             android:textColor="#DCDCDC"
             android:textSize="15.0dip" />
     </LinearLayout>
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1.0"
-        android:background="#000000"
+        android:background="@drawable/bg"
         android:flipInterval="30"
         android:persistentDrawingCache="animation" />
 

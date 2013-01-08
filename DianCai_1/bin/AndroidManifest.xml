@@ -16,25 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchSquareActivity" >
-        </activity>
-        <activity android:name=".HomeListActivity" >
-        </activity>
         <activity android:name=".MessageGroup" >
-        </activity>
-        <activity android:name=".MoreItemsActivity" >
-        </activity>
-        <activity android:name=".MyInfoActivity" >
         </activity>
         <activity android:name=".ActionActivity" >
         </activity>
         <activity android:name=".StartActivity" >
         </activity>
         <activity android:name=".YidianActivity" >
-        </activity>
-        <activity
-            android:name=".Transition3d"
-            android:theme="@style/SampleTheme" >
         </activity>
     </application>
 

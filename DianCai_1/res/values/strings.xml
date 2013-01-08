@@ -1,12 +1,15 @@
 <resources>
 
-    <string name="app_name">懒人外卖</string>
+    <string name="app_name">掌上厨房</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="listbtn">点菜</string>
-     <string name="laobantuijian">老板推荐</string>
+    <string name="listbtn">收藏</string>
+     <string name="laobantuijian">推荐</string>
     <string name="tesetuijian">特色推荐</string>
     <string name="zuixincaise">最新菜色</string>
-    <string name="price">价格：</string>
-    <string name="time">时间：</string>
+    <string name="price">推荐指数:</string>
+    <string name="time">烹饪难度:</string>
+    <string name="mincai">闽菜</string>
+     <string name="yuecai">粤菜</string>
+      <string name="lucai">鲁菜</string>
 </resources>

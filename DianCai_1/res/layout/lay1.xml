@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#F0F8FF" >
 
     <ListView
-        android:cacheColorHint="#F0F8FF"
-        android:id="@+id/listView1"
+        android:id="@+id/listview_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
-    
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+        android:persistentDrawingCache="animation|scrolling" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DCDCDC"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:textColor="#7A7A7A"
+                android:padding="10dip"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
