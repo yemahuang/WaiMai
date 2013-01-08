@@ -121,7 +121,7 @@ public class ActionActivity extends Activity implements  AdapterView.OnItemClick
 
 
 		LinearLayout linearlayout1 = (LinearLayout)view1.findViewById(R.id.LinearLayout);
-		MyListViewAdapter adapter = new MyListViewAdapter(this,lls,list1,list2,list3,list4);
+		MyListViewAdapter adapter = new MyListViewAdapter(this,lls);
 		myList1.setAdapter(adapter);
 		myList2.setAdapter(adapter);
 		myList3.setAdapter(adapter);

@@ -83,7 +83,6 @@ public class HideListViewAdapter extends BaseAdapter{
 	Cursor cs;
 	private List<List<String>> lls;
 	private LayoutInflater mInflater;
-	private List<String> list1,list2,list3,list4,list5;
 	public final static String URL = "/data/data/com.example.diancai/files";
 	//数据库文件
 	public final static String DB_FILE_NAME = "tabkaway.db";
@@ -92,19 +91,13 @@ public class HideListViewAdapter extends BaseAdapter{
 	SQLiteDatabase db = null;
 	private int selectItem=-1;
 	private int sign=-1;
-	public HideListViewAdapter(Context context ,List<List<String>
-	> lls,List<String> list1,List<String> list2,List<String> list3,List<String> list4,List<String> list5){
+	public HideListViewAdapter(Context context ,List<List<String>> lls){
 		this.mInflater = LayoutInflater.from(context);
 		this.lls = lls;
-		this.list1=list1;
-		this.list2=list2;
-		this.list3=list3;
-		this.list4=list4;
-		this.list5=list5;
 	}
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return list1.size();
+		return lls.get(0).size();
 	}
 
 	public Object getItem(int arg0) {
@@ -127,7 +120,7 @@ public class HideListViewAdapter extends BaseAdapter{
 			holder=new ViewHolder();  
 			convertView = mInflater.inflate(R.layout.vlist, null);
 			holder.img = (ImageView)convertView.findViewById(R.id.img);
-			//				holder.title = (TextView)convertView.findViewById(R.id.title);	
+
 			holder.tv1 = (TextView) convertView     
 					.findViewById(R.id.textView1);  
 			holder.tv2 = (TextView) convertView     
@@ -145,13 +138,12 @@ public class HideListViewAdapter extends BaseAdapter{
 			holder = (ViewHolder)convertView.getTag();
 		}
 		holder.tv1.setText(lls.get(0).get(position));   
-		System.out.println("---->--"+list1.get(position)+position);
 		holder.tv2.setText(lls.get(1).get(position));   
 		holder.tv3.setText(lls.get(2).get(position)); 
 		holder.tv4.setText(lls.get(3).get(position)); 
 	
 		holder.hideImageView.setImageResource(PHOTOS_RESOURCES[position]);
-		holder.hideText.setText(list5.get(position));
+		holder.hideText.setText(lls.get(4).get(position));
 		holder.btn_diancai.setOnClickListener(new OnClickListener() {
 			
 			@Override

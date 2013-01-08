@@ -54,7 +54,6 @@ public class MyListViewAdapter extends BaseAdapter{
 	Cursor cs;
 	private List<List<String>> lls;
 	private LayoutInflater mInflater;
-	private List<String> list1,list2,list3,list4;
 	public final static String URL = "/data/data/com.example.diancai/files";
 	//数据库文件
 	public final static String DB_FILE_NAME = "tabkaway.db";
@@ -62,17 +61,13 @@ public class MyListViewAdapter extends BaseAdapter{
 	public final static String TABLE_NAME = "dish_info";
 	SQLiteDatabase db = null;
 	public MyListViewAdapter(Context context ,List<List<String>
-	> lls,List<String> list1,List<String> list2,List<String> list3,List<String> list4){
+	> lls){
 		this.mInflater = LayoutInflater.from(context);
 		this.lls = lls;
-		this.list1=list1;
-		this.list2=list2;
-		this.list3=list3;
-		this.list4=list4;
 	}
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return list1.size();
+		return lls.get(0).size();
 	}
 
 	public Object getItem(int arg0) {
@@ -95,7 +90,6 @@ public class MyListViewAdapter extends BaseAdapter{
 			holder=new ViewHolder();  
 			convertView = mInflater.inflate(R.layout.vlist_1, null);
 			holder.img = (ImageView)convertView.findViewById(R.id.img);
-			//				holder.title = (TextView)convertView.findViewById(R.id.title);	
 			holder.tv1 = (TextView) convertView     
 					.findViewById(R.id.textView1);  
 			holder.tv2 = (TextView) convertView     
@@ -111,7 +105,6 @@ public class MyListViewAdapter extends BaseAdapter{
 			holder = (ViewHolder)convertView.getTag();
 		}
 		holder.tv1.setText(lls.get(0).get(position));   
-		System.out.println("---->--"+list1.get(position)+position);
 		holder.tv2.setText(lls.get(1).get(position));   
 		holder.tv3.setText(lls.get(2).get(position)); 
 		holder.tv4.setText(lls.get(3).get(position)); 
@@ -128,27 +121,6 @@ public class MyListViewAdapter extends BaseAdapter{
 			}
 		});
 		holder.img.setImageResource(mImageIds[position]);
-//        LinearLayout info = (LinearLayout)convertView.findViewById(R.id.hidlayout);
-//        if(position == selectItem){
-//        	//被选中的元素
-//        	    if(sign == selectItem){
-//        	    	//再次选中的时候会隐藏，并初始化标记位置
-//        	               info.setVisibility(View.GONE);
-//		    //没有被选中设置透明色
-//            	    convertView.setBackgroundColor(Color.parseColor("#00000000")); 	    
-//            	    sign = -1;
-//        	    }else{
-//        	    	//选中的时候会展示，并标记此位置
-//        	         info.setVisibility(View.VISIBLE);
-//		            //被选中设置背景颜色
-//            	    convertView.setBackgroundColor(Color.parseColor("#B0E2FF"));            
-//            	    sign = selectItem;
-//        	}
-//        	
-//        }else {//未被选中的元素
-//            info.setVisibility(View.GONE);
-//            convertView.setBackgroundColor(Color.parseColor("#00000000"));        
-//        }
 		return convertView;
 	}
 

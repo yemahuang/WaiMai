@@ -54,8 +54,8 @@ public class StartActivity extends Activity implements  AdapterView.OnItemClickL
 	public final static String URL = "/data/data/com.example.diancai/files";
 	//数据库文件
 	public final static String DB_FILE_NAME = "tabkaway.db";
-	// 归属地
-	public final static String TABLE_NAME = "dish_info";
+	public final static String TABLE_NAME1 = "dish_info";
+	public final static String TABLE_NAME2 = "MinCai";
 	static SQLiteDatabase db = null;
 	private ViewPager mPager;//页卡内容
 	private List<View> listViews; // Tab页面列表
@@ -106,12 +106,13 @@ public class StartActivity extends Activity implements  AdapterView.OnItemClickL
 		setContentView(R.layout.main);
 		InitImageView();
 		InitTextView();
-		lls = getlls1();
+		lls = getlls1(TABLE_NAME1);
 		InitView();
 		
-		MyListViewAdapter mylistadapter = new MyListViewAdapter(this,lls,list1,list2,list3,list4);
-	    hideadapter = new HideListViewAdapter(this,lls,list1,list2,list3,list4,list5);
-		myList1.setAdapter(mylistadapter);		
+		MyListViewAdapter mylistadapter = new MyListViewAdapter(this,lls);
+		lls = getlls1(TABLE_NAME2);
+	    hideadapter = new HideListViewAdapter(this,lls);
+		myList1.setAdapter(mylistadapter);	
 		myList2.setAdapter(hideadapter);
 		myList3.setAdapter(hideadapter);
 		myList1.setOnItemClickListener(this);
@@ -191,7 +192,7 @@ public class StartActivity extends Activity implements  AdapterView.OnItemClickL
 	  * 获取
 	  * 
 	  */
-	 private List<List<String>> getlls1() {  
+	 private List<List<String>> getlls1(String tableName ) {  
 		 List<List<String>> lls = new ArrayList<List<String>>();
 		 list1 = new ArrayList<String>();  
 		 list2 = new ArrayList<String>(); 
@@ -199,7 +200,7 @@ public class StartActivity extends Activity implements  AdapterView.OnItemClickL
 		 list4 = new ArrayList<String>(); 
 		 list5 = new ArrayList<String>();
 		 db=SQLiteDbHelper.copyDB((this));
-		 String sql = "SELECT * FROM "+TABLE_NAME;
+		 String sql = "SELECT * FROM "+tableName;
 		 cs = db.rawQuery(sql, null);  
 		 if(cs.moveToFirst()) {  
 			 do{     
@@ -216,7 +217,8 @@ public class StartActivity extends Activity implements  AdapterView.OnItemClickL
 				 lls.add(list1);	
 				 lls.add(list2);	
 				 lls.add(list3);	
-				 lls.add(list4);					
+				 lls.add(list4);	
+				 lls.add(list5);
 			 }    
 			 while(cs.moveToNext());
 		 }      
